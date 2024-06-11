@@ -60,7 +60,7 @@ public class ItemIntegrationTest {
                 .then()
                 .statusCode(HttpStatus.OK.value())
                 .contentType(ContentType.JSON)
-                .body("itemId", equalTo(itemId))
+                .body("id", equalTo(itemId))
                 .body("name", equalTo(itemName));
     }
 
